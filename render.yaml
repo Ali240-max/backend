@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
